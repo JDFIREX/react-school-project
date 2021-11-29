@@ -19,6 +19,10 @@ const GallerySlider = () : ReactElement => {
       useEffect(() => {
         function handleResize() {
             setWindowSize(window.innerWidth);
+            if(dragBoxRef.current){
+                dragBoxRef.current.style.marginLeft = "0px";
+            }
+            setSliderPos(0)
         }
         window.addEventListener("resize", handleResize);
         handleResize();
@@ -29,7 +33,7 @@ const GallerySlider = () : ReactElement => {
 
     useEffect(() => {
         const x = windowSize - ((windowSize / 100) * 12) - 17;
-        const r = Math.ceil((images.length * 330) / x);
+        const r = Math.round((images.length * 330) / x);
         let y = []
         for(let i = 0 ; i < r ; i++){
             y.push(i)
@@ -44,17 +48,28 @@ const GallerySlider = () : ReactElement => {
     };
     const move = (e : React.MouseEvent) => {
         if(dragStatus && dragBoxRef.current){
+
             const marginLeftCurrent = parseFloat(dragBoxRef.current.style.marginLeft) || 0;
             const diff = (startScreen - e.screenX);
-            const x = (marginLeftCurrent - diff) < 0  ? (marginLeftCurrent - diff) : 0 ;
-            const maxx = -1 * ( (330 * images.length) - (windowSize - ((windowSize / 100) * 12)) );
+            const window = windowSize - ((windowSize / 100) * 12) - 17;
+            const x = marginLeftCurrent - diff;
+            const maxMove = ((330 * (images.length - 1)) + 300 - window) * -1;
 
-            const xx  = x < maxx ? maxx : x;
-            dragBoxRef.current.style.marginLeft = xx + "px";
+            if(x > 0){
+                dragBoxRef.current.style.marginLeft = "0px";
+            }else  if(x > maxMove){
+                dragBoxRef.current.style.marginLeft = x + "px";
+            } else {
+                dragBoxRef.current.style.marginLeft = maxMove + "px";
+            }
+
             setStartScreen(e.screenX);
 
-            const r = Math.floor(Math.abs((xx * 1.25) / (windowSize - ((windowSize / 100) * 12))))
-            setSliderPos(r);
+
+            const posR = parseFloat(dragBoxRef.current.style.marginLeft) / (window);
+            console.log(parseFloat(dragBoxRef.current.style.marginLeft) / (window))
+
+            setSliderPos(Math.round(Math.abs(posR)));
         }
     }
     const endDrag = () => {
@@ -63,10 +78,16 @@ const GallerySlider = () : ReactElement => {
 
     const moveSlider = (item : number) => {
         if(dragBoxRef.current){
-            const x = windowSize - ((windowSize / 100) * 12);
-            const maxx = -1 * ( (330 * images.length) - x );
-            const move = ((maxx / radio.length) - ((radio.length * 330) / 2)) * item - (40 * item);
-            dragBoxRef.current.style.marginLeft = move + "px";
+            const window = windowSize - ((windowSize / 100) * 12);
+            const imgPerW = (window + 30) / 330;
+            const posR = (imgPerW * 330) * item * -1;
+            const maxMove = ((330 * (images.length - 1)) + 300 - window) * -1;
+            if(posR < maxMove){
+                dragBoxRef.current.style.marginLeft = maxMove - 17 + "px";
+            } else {
+                dragBoxRef.current.style.marginLeft = posR + "px";
+            }
+            setSliderPos(item);
         }
     }
 
