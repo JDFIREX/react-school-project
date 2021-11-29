@@ -1,0 +1,60 @@
+.header{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 0 6vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1d1d1b;
+
+    .Nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+
+        .links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap : 20px;
+    
+            a{
+                color: white;
+                text-decoration: none;
+    
+                &:hover{
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid blue;
+                    margin-top: 6px;
+                }
+            }
+        }
+        .images{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            div{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                    border-radius: 26px;
+                    justify-content: center;
+                background-color: lightgray;
+                &:hover{
+                    background-color: rgb(136, 136, 136);
+                }
+            }
+        }
+
+
+    }
+
+    
+
+
+}

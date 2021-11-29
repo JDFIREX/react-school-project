@@ -1,0 +1,56 @@
+.slider-header{
+    width: 100%;
+    padding: 0 6vw;
+    position: relative;
+    background-image: url('//www.bellespa.pl/wp-content/themes/bellespa/images/header.png');
+
+    .slider-background{
+        background-repeat: no-repeat;
+        background-size: auto 300px;
+        background-position: right;
+        width: auto;
+        height: 300px;
+    }
+
+    .slider-info{
+        width: 100%;
+        position: absolute;
+        top: 2rem;
+
+        h1{
+            color : white;
+            font-size: 2rem;
+        }
+
+        p{
+            width: 300px;
+            font-size: 1rem;
+            color: black;
+        }
+
+        button{
+            margin-top: 1rem;
+            width: 150px;
+            height: 40px;
+            background-color: transparent;
+            border: 1px solid black;
+            outline : none;
+            border-radius: 10px;
+            color: rgb(70, 70, 70);
+            font-size: 1rem;
+        }
+
+        .slider-radio{
+            margin-top: .5rem;
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+
+            input{
+                padding: 2px;
+            }
+        }
+
+    }
+
+}

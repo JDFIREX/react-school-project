@@ -1,0 +1,72 @@
+.oferts{
+    width: 100%;
+    margin-bottom: 5rem;
+    padding : 0 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .oferts-slider{
+        margin-top: 5rem;
+        position: relative;
+        width: 100%;
+        display: flex;
+        overflow-x: hidden;
+        flex-direction: row;
+
+        .oferts-drag-box{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .box{
+                width: 300px !important;
+                border: 1px solid red;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+                pointer-events: none;
+
+                div{
+                    width: 100%;
+                    height: 200px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    pointer-events: none;
+                    user-select: none;
+                }
+
+                h1{
+                    margin-bottom: .5rem;
+                    pointer-events: none;
+                    -webkit-touch-callout: none; /* iOS Safari */
+                    -webkit-user-select: none; /* Safari */
+                     -khtml-user-select: none; /* Konqueror HTML */
+                       -moz-user-select: none; /* Old versions of Firefox */
+                        -ms-user-select: none; /* Internet Explorer/Edge */
+                            user-select: none; 
+                }
+
+                p{
+                    padding: 0.5rem;
+                    pointer-events: none;
+                    -webkit-touch-callout: none; /* iOS Safari */
+                    -webkit-user-select: none; /* Safari */
+                     -khtml-user-select: none; /* Konqueror HTML */
+                       -moz-user-select: none; /* Old versions of Firefox */
+                        -ms-user-select: none; /* Internet Explorer/Edge */
+                            user-select: none; 
+                }
+
+            }
+        }
+
+    }
+
+}

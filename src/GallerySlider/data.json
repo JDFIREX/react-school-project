@@ -1,0 +1,79 @@
+{
+    "slider" : [
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 1",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 2",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 3",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 4",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 5",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 6",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 7",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 8",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 9",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 10",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 11",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 12",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 13",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 14",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        },
+        {
+            "image" : "https://www.bellespa.pl/wp-content/uploads/2021/11/Belle-spa-clinic_kosmetyka-twarzy.jpg",
+            "title" : "Lorem Ipsum 15",
+            "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet elit tempus, tempor sem ut, rutrum arcu. Nunc porttitor, magna vel sagittis rhoncus, elit tortor hendrerit elit, at lacinia mauris sem mollis tellus. "
+        }
+    ]
+}
