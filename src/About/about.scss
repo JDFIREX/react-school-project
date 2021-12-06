@@ -1,0 +1,32 @@
+.about{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    background-image: url('https://www.bellespa.pl/wp-content/themes/bellespa/images/flares-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1rem 6vw;
+
+    .about-info{
+        width: 50%;
+
+        h5{
+            margin-bottom: .5rem;
+        }
+        h1{
+            margin-bottom: 1rem;
+        }
+        p{
+            line-height: 25px;
+        }
+    }
+
+}

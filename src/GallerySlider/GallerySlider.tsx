@@ -16,7 +16,9 @@ const GallerySlider = () : ReactElement => {
     const [radio, setRadio] = useState<number[]>([0,1,2,3]);
     const dragBoxRef = useRef<HTMLDivElement>(null);
     const [windowSize, setWindowSize] = useState<number>(0);
-      useEffect(() => {
+
+
+    useEffect(() => {
         function handleResize() {
             setWindowSize(window.innerWidth);
             if(dragBoxRef.current){
@@ -24,9 +26,11 @@ const GallerySlider = () : ReactElement => {
             }
             setSliderPos(0)
         }
+
         window.addEventListener("resize", handleResize);
         handleResize();
         return () => window.removeEventListener("resize", handleResize);
+        
     }, []);
 
     const images : imagesProps[] = data.slider;
@@ -92,8 +96,6 @@ const GallerySlider = () : ReactElement => {
     }
 
     const moveLeft = () => {
-        const window = windowSize - ((windowSize / 100) * 12);
-        const maxMove = ((330 * (images.length - 1)) + 300 - window) * -1;
         if(dragBoxRef.current){
             const move = parseFloat(dragBoxRef.current.style.marginLeft) + 330;
             if(move > 0){
