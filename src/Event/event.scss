@@ -7,15 +7,16 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 
     .event-box{
         position: relative;
-        width: 50%;
+        width: 450px;
         height: 700px;
 
         img{
-            width: 100%;
+            width: 450px;
             height: 100%;
         }
 

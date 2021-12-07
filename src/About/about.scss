@@ -10,13 +10,14 @@
     background-color: #f1f1f1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     gap: 3rem;
     padding: 1rem 6vw;
+    flex-wrap: wrap;
 
     .about-info{
-        width: 50%;
+        width: 500px;
 
         h5{
             margin-bottom: .5rem;
@@ -27,6 +28,11 @@
         p{
             line-height: 25px;
         }
+    }
+
+
+    img{
+        width: 100%;
     }
 
 }

@@ -5,6 +5,7 @@ import GallerySlider from "./GallerySlider/GallerySlider"
 import About from "./About/About"
 import EventSection from "./Event/Event"
 import MoreSection from "./MoreSection/MoreSection"
+import Footer from "./Footer/Footer"
 
 const App = () : ReactElement => {
 
@@ -17,6 +18,7 @@ const App = () : ReactElement => {
             <About />
             <EventSection />
             <MoreSection />
+            <Footer />
         </>
     )
 }
