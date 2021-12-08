@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react"
+import React, { ReactElement, useEffect, useState } from "react"
 import Header from "./Header/Header"
 import MainSlider from "./MainSlider/MainSlider"
 import GallerySlider from "./GallerySlider/GallerySlider"
@@ -9,12 +9,27 @@ import Footer from "./Footer/Footer"
 
 const App = () : ReactElement => {
 
+    const [windowSize, setWindowSize] = useState<number>(0);
+
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowSize(window.innerWidth);
+        }
+
+        window.addEventListener("resize", handleResize);
+        handleResize();
+        return () => window.removeEventListener("resize", handleResize);
+        
+    }, []);
+
+
 
     return (
         <>
-            <Header />
+            <Header windowSize={windowSize} />
             <MainSlider />
-            <GallerySlider />
+            <GallerySlider windowSize={windowSize} />
             <About />
             <EventSection />
             <MoreSection />

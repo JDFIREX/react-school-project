@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useRef, useState } from "react";
+import { FC, ReactElement, useEffect, useRef, useState } from "react";
 import * as data from "./data.json"
 import "./galery.scss"
 
@@ -8,32 +8,27 @@ interface imagesProps {
     text : string
 }
 
-const GallerySlider = () : ReactElement => {
+interface GalleryProps{
+    windowSize  : number
+}
 
+const GallerySlider : FC<GalleryProps> = (props) : ReactElement => {
+
+    const {windowSize} = props;
     const [dragStatus,setDrag] = useState<boolean>(false);
     const [sliderPos, setSliderPos] = useState<number>(0);
     const [startScreen, setStartScreen] = useState<number>(0);
     const [radio, setRadio] = useState<number[]>([0,1,2,3]);
     const dragBoxRef = useRef<HTMLDivElement>(null);
-    const [windowSize, setWindowSize] = useState<number>(0);
+    const images : imagesProps[] = data.slider;
 
 
     useEffect(() => {
-        function handleResize() {
-            setWindowSize(window.innerWidth);
-            if(dragBoxRef.current){
-                dragBoxRef.current.style.marginLeft = "0px";
-            }
-            setSliderPos(0)
+        if(dragBoxRef.current){
+            dragBoxRef.current.style.marginLeft = "0px";
         }
-
-        window.addEventListener("resize", handleResize);
-        handleResize();
-        return () => window.removeEventListener("resize", handleResize);
-        
-    }, []);
-
-    const images : imagesProps[] = data.slider;
+        setSliderPos(0)
+    },[windowSize])
 
     useEffect(() => {
         const x = windowSize - ((windowSize / 100) * 12) - 17;
